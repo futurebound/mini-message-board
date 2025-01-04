@@ -4,4 +4,12 @@ ExpressJS learning project to build an interactive message board.
 
 ## Installation
 
+```
+pnpm install
+```
+
 ## Setup
+
+```
+pnpm add express ejs
+```
