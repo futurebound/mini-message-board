@@ -11,7 +11,9 @@ app.listen(PORT, () => {
 })
 
 const indexRouter = require('./routes/indexRouter')
+const newMessageRouter = require('./routes/newMessageRouter')
 app.use('/', indexRouter)
+app.use('/new', newMessageRouter)
 
 // EJS setup
 app.set('views', path.join(__dirname, 'views'))

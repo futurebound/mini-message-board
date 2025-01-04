@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>New Message Form</title>
+    <!-- <link rel="stylesheet" href="../public/" /> -->
+  </head>
+  <body>
+    <h1>New Message</h1>
+    <form method="POST" action="/new">
+      <div>
+        <label for="messageAuthor">Author:</label>
+        <input type="text" id="messageAuthor" name="messageAuthor" required />
+      </div>
+
+      <div>
+        <label for="messageText">Message:</label>
+        <textarea
+          id="messageText"
+          name="messageText"
+          rows="4"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </body>
+</html>
