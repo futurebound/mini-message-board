@@ -11,5 +11,5 @@ pnpm install
 ## Setup
 
 ```
-pnpm add express ejs
+pnpm add dotenv express ejs
 ```
