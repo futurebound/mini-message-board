@@ -4,12 +4,18 @@
     <!-- <link rel="stylesheet" href="../public/" /> -->
   </head>
   <body>
+    <a href="/new">
+      <button>Add New Message</button>
+    </a>
     <ul>
       <% messages.map((message) => { %>
       <li>
         <p>User: <%= message.user %></p>
         <p>Text: <%= message.text %></p>
         <p>Date: <%= message.added %></p>
+        <a href="/messages/<%= message.id %>">
+          <button>View Full Message</button>
+        </a>
       </li>
       <% })%>
     </ul>
