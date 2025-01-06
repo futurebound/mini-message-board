@@ -7,6 +7,7 @@ async function messagesAllGet(req, res) {
   // res.send('Messages: ' + messages.map((message) => {
 
   // })
+  res.render('index', { title: 'Mini Messageboard', messages: messages })
 }
 
 module.exports = {
