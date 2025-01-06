@@ -5,11 +5,6 @@ const path = require('path')
 const app = express()
 dotenv.config()
 
-const PORT = process.env.PORT || 3000
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}!`)
-})
-
 app.use(express.urlencoded({ extended: true }))
 
 const indexRouter = require('./routes/indexRouter')
@@ -21,4 +16,7 @@ app.use('/new', newMessageRouter)
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
-// app.get('/new', (req, res) => res.send('new message form'))
+const PORT = process.env.PORT || 3000
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}!`)
+})
