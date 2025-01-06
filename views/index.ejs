@@ -10,7 +10,7 @@
     <ul>
       <% messages.map((message) => { %>
       <li>
-        <p>User: <%= message.user %></p>
+        <p>User: <%= message.username %></p>
         <p>Text: <%= message.text %></p>
         <p>Date: <%= message.added %></p>
         <a href="/messages/<%= message.id %>">
